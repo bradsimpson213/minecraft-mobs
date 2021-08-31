@@ -3,6 +3,9 @@
 -- Dtop tables if they exist (reset)
 DROP TABLE IF EXISTS biomes CASCADE;
 DROP TABLE IF EXISTS mobs;
+DROP TABLE IF EXISTS drops CASCADE;
+DROP TABLE IF EXISTS items;
+
 
 -- Create / re-create tables
 CREATE TABLE biomes (
@@ -16,9 +19,24 @@ CREATE TABLE mobs (
   about VARCHAR(255) NOT NULL,
   hit_points INTEGER NOT NULL,
   biome_id INTEGER NOT NULL,
-  FOREIGN KEY (biome_id) REFERENCES biomes(id) ON DELETE CASCADE,
+  FOREIGN KEY (biome_id) REFERENCES biomes(id),
   damage INTEGER NOT NULL,
   hostile BOOLEAN NOT NULL DEFAULT FALSE
+);
+
+CREATE TABLE items (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(55) NOT NULL,
+  about VARCHAR(255) NOT NULL,
+  damage INTEGER
+);
+
+CREATE TABLE drops (
+  id SERIAL PRIMARY KEY,
+  mob_id INTEGER NOT NULL,
+  FOREIGN KEY (mob_id) REFERENCES mobs(id),
+  drop_id INTEGER NOT NULL,
+  FOREIGN KEY (drop_id) REFERENCES items(id),
 );
 
 -- Seed Data
@@ -58,3 +76,16 @@ VALUES
   ('Husk', 'Similar to a zombie. Its punches inflict hunger.', 20, 9, 3, true);
 
 
+INSERT INTO mobs
+  (name, about, damage)
+VALUES
+  ('Bow', 'A mighty bow for shooting stuff', 10),
+  (),
+  (),
+  ();
+
+INSERT INTO drops
+  (mob_id, drop_id)
+VALUES
+  (),
+  ();
