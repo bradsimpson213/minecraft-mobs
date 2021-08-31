@@ -19,8 +19,6 @@ CREATE TABLE mobs (
   hostile BOOLEAN NOT NULL DEFAULT FALSE
 );
 
-
-
 -- Seed Data
 INSERT INTO biomes
   (name)
