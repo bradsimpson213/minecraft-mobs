@@ -5,12 +5,12 @@ DROP TABLE IF EXISTS mobs;
 -- Create / re-create tables
 CREATE TABLE biomes (
   id SERIAL PRIMARY KEY,
-  name TEXT NOT NULL
+  name VARCHAR(25) NOT NULL
 );
 
 CREATE TABLE mobs (
   id SERIAL PRIMARY KEY,
-  name TEXT NOT NULL,
+  name VARCHAR(35) NOT NULL,
   about TEXT NOT NULL,
   hit_points INTEGER NOT NULL,
   biome_id INTEGER NOT NULL,
