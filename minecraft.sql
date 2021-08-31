@@ -1,4 +1,4 @@
--- db: user:minecraft_user pw:minecraft';
+-- local DB info db:minecraft user:minecraft_user pw:minecraft';
 
 -- Dtop tables if they exist (reset)
 DROP TABLE IF EXISTS biomes CASCADE;
@@ -34,7 +34,6 @@ VALUES
   ('Ocean'),
   ('Snowy Plains'),
   ('Desert');
-
 
 
 INSERT INTO mobs
