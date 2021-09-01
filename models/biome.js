@@ -4,7 +4,7 @@ module.exports = (sequelize, DataTypes) => {
     name: DataTypes.STRING
   }, {});
   Biome.associate = function(models) {
-    // associations can be defined here
+    Biome.hasMany(models.Mob, { foreignKey: 'biomeId' })
   };
   return Biome;
 };
