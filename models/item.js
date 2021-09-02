@@ -7,12 +7,13 @@ module.exports = (sequelize, DataTypes) => {
     armor: DataTypes.INTEGER
   }, {});
   Item.associate = function(models) {
+    
     const columnMappings = {
       through: 'Drop',
       foreignKey: 'itemId',
       otherKey: 'mobId'
-  }
-  Mob.belongsToMany(models.Mob, columnMappings)
+    }
+    Item.belongsToMany(models.Mob, columnMappings)
   };
   return Item;
 };
