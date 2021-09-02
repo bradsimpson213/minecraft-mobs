@@ -10,6 +10,14 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   Mob.associate = function(models) {
     Mob.belongsTo(models.Biome,  { foreignKey: 'biomeId' })
+
+    const columnMappings = {
+        through: 'Drop',
+        foreignKey: 'mobId',
+        otherKey: 'itemId'
+    }
+    Mob.belongsToMany(models.Item, columnMappings)
+
   };
   return Mob;
 };
