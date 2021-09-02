@@ -10,7 +10,9 @@ module.exports = {
           hitPoints: 20,
           biomeId: 1,
           damage: 49,
-          hostile: true
+          hostile: true, 
+          createdAt: new Date(), 
+          updatedAt: new Date() 
         },
         {
           name: 'Zombie',
@@ -18,7 +20,9 @@ module.exports = {
           hitPoints: 20,
           biomeId: 1,
           damage: 3,
-          hostile: true
+          hostile: true,
+          createdAt: new Date(), 
+          updatedAt: new Date() 
         },
         {
           name: 'Enderman',
@@ -26,7 +30,9 @@ module.exports = {
           hitPoints: 40,
           biomeId: 6,
           damage: 6,
-          hostile: false
+          hostile: false,
+          createdAt: new Date(), 
+          updatedAt: new Date() 
         },
         {
           name: 'Wolf',
@@ -34,7 +40,9 @@ module.exports = {
           hitPoints: 4,
           biomeId: 3,
           damage: 1,
-          hostile: false
+          hostile: false,
+          createdAt: new Date(), 
+          updatedAt: new Date() 
         },
         {
           name: 'Tamed Wolf',
@@ -42,7 +50,9 @@ module.exports = {
           hitPoints: 10,
           biomeId: 3,
           damage: 2,
-          hostile: false
+          hostile: false,
+          createdAt: new Date(), 
+          updatedAt: new Date() 
         },
         {
           name: 'Skeleton',
@@ -50,7 +60,9 @@ module.exports = {
           hitPoints: 20,
           biomeId: 1,
           damage: 3,
-          hostile: true
+          hostile: true,
+          createdAt: new Date(), 
+          updatedAt: new Date() 
         },
         {
           name: 'Spider',
@@ -58,7 +70,9 @@ module.exports = {
           hitPoints: 16,
           biomeId: 1,
           damage: 3,
-          hostile: true
+          hostile: true,
+          createdAt: new Date(), 
+          updatedAt: new Date() 
         },
         {
           name: 'Cow',
@@ -66,7 +80,9 @@ module.exports = {
           hitPoints: 10,
           biomeId: 2,
           damage: 0,
-          hostile: false
+          hostile: false,
+          createdAt: new Date(), 
+          updatedAt: new Date() 
         },
         {
           name: 'Mushroom Cow',
@@ -74,7 +90,9 @@ module.exports = {
           hitPoints: 10,
           biomeId: 4,
           damage: 0,
-          hostile: false
+          hostile: false,
+          createdAt: new Date(), 
+          updatedAt: new Date() 
         },
         {
           name: 'Pig',
@@ -82,7 +100,9 @@ module.exports = {
           hitPoints: 5,
           biomeId: 2,
           damage: 0,
-          hostile: false
+          hostile: false,
+          createdAt: new Date(), 
+          updatedAt: new Date() 
         },
         {
           name: 'Sheep',
@@ -90,7 +110,9 @@ module.exports = {
           hitPoints: 7,
           biomeId: 2,
           damage: 0,
-          hostile: false
+          hostile: false,
+          createdAt: new Date(), 
+          updatedAt: new Date() 
         },
         {
           name: 'Stray',
@@ -98,7 +120,9 @@ module.exports = {
           hitPoints: 20,
           biomeId: 8,
           damage: 2,
-          hostile: true
+          hostile: true,
+          createdAt: new Date(), 
+          updatedAt: new Date() 
         },
         {
           name: 'Drowned',
@@ -106,7 +130,9 @@ module.exports = {
           hitPoints: 20,
           biomeId: 7,
           damage: 5,
-          hostile: true
+          hostile: true,
+          createdAt: new Date(), 
+          updatedAt: new Date() 
         },
         {
           name: 'Ghast',
@@ -114,7 +140,9 @@ module.exports = {
           hitPoints: 10,
           biomeId: 5,
           damage: 17,
-          hostile: true
+          hostile: true,
+          createdAt: new Date(), 
+          updatedAt: new Date() 
         },
         {
           name: 'Zombified Piglin',
@@ -122,7 +150,9 @@ module.exports = {
           hitPoints: 20,
           biomeId: 5,
           damage: 9,
-          hostile: false
+          hostile: false,
+          createdAt: new Date(), 
+          updatedAt: new Date() 
         },
         {
           name: 'Magma Cube',
@@ -130,7 +160,9 @@ module.exports = {
           hitPoints: 16,
           biomeId: 5,
           damage: 6,
-          hostile: true
+          hostile: true,
+          createdAt: new Date(), 
+          updatedAt: new Date() 
         },
         {
           name: 'Husk',
@@ -138,7 +170,9 @@ module.exports = {
           hitPoints: 20,
           biomeId: 9,
           damage: 3,
-          hostile: true
+          hostile: true,
+          createdAt: new Date(), 
+          updatedAt: new Date() 
         }
     ], {});
       
